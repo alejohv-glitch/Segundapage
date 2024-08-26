@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Romántica</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7e6e6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #d45d79;
+            margin-bottom: 20px;
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-gap: 15px;
+            max-width: 1000px;
+            width: 100%;
+            padding: 0 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .caption {
+            text-align: center;
+            font-size: 18px;
+            color: #d45d79;
+            margin-top: 10px;
+        }
+
+        @media(max-width: 600px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+        .negra {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Recuerdos con mi negrita linda</h1>
+    <div class="gallery">
+        <div>
+            <img src="Camiyyo.jpeg" alt="Momento especial 1">
+            <div class="caption">Primera salidita con mi negra</div>
+        </div>
+        <div>
+            <img src="IMG_0336.jpeg" alt="Momento especial 2">
+            <div class="caption">inmortalizandonos</div>
+        </div>
+        <div>
+            <img src="Regalitocute.jpeg" alt="Momento especial 3">
+            <div class="caption">el regalo mas bonito de la mas bonita</div>
+        </div>
+        <div>
+            <img src="Bestofriends.jpeg" alt="Momento especial">
+            <div class="caption">fotico con nuestra hija adoptada(es un peluche)</div>
+        </div>
+        <div>
+            <img src="Canelalinda.jpeg" alt="Momento especial 5">
+            <div class="caption">Canela(lagatamas preciosa
+            del mundo)</div>
+        </div>
+        <div>
+            <img src="IMG_0346.jpeg" alt="Momento especial 6">
+            <div class="caption">la sonrisa mas linda del fokin world</div>
+        </div>
+    </div>
+    <div class="negra"> <p> TE ADORO MALDITA 😡 aun con tus berrinches y peleas y todo lo demas t adoro y t qro bastante <p>
+    </div>
+</body>
+</html>
